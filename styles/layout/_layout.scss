@@ -1,19 +1,82 @@
 .container {
-	display: grid;
-	grid-template-rows: repeat(2, 1fr);
-	grid-template-columns: 1fr 3fr;
-	}
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 23vw 3fr;
+}
 
 .sidebar {
-	grid-row: 1 / span 2;
+  grid-row: 1 / span 2;
+  height: 100vh;
 
-	background-color: skyblue;
-	padding: 18.5%;
-	height: 100vh;
+  color: $color-primary;
+  background-color: $color-grey;
+  font-size: 1.7rem;
+
+  display: flex;
+  flex-direction: column;
+  padding: 18.5%;
+
+  span {
+    color: $color-tertiary;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  hr {
+    margin-top: 5px;
+  }
+
+  &__list {
+    list-style: none;
+    color: $color-secondary;
+
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &__item {
+      width: min-content;
+      white-space: nowrap;
+
+      a {
+        text-decoration: none;
+        color: $color-secondary;
+
+        &:after {
+          content: "";
+          display: block;
+          margin: auto;
+          height: 2px;
+          width: 0px;
+          margin-top: 3px;
+          transition: all 0.5s ease;
+        }
+
+        &:hover:after {
+          width: 100%;
+          background: $color-tertiary;
+        }
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  &__item--active a {
+    color: $color-primary;
+    &:after {
+      content: "";
+      display: block;
+      margin: auto;
+      height: 2px;
+      width: 100%;
+      margin-top: 3px;
+      background-color: $color-tertiary;
+    }
+  }
 }
 
 .main {
-	grid-row: 1 / span 2;
-
-	background-color: teal;
+  background-color: teal;
 }
