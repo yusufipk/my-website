@@ -1,4 +1,6 @@
 import { useRouter } from "next/router";
+import Link from "next/link";
+
 function Sidebar({}) {
   const router = useRouter();
   return (
@@ -16,7 +18,7 @@ function Sidebar({}) {
               : "sidebar__list__item"
           }
         >
-          <a href="/">Home</a>
+          <Link href="/">Home</Link>
         </li>
         <li
           className={
@@ -25,7 +27,7 @@ function Sidebar({}) {
               : "sidebar__list__item"
           }
         >
-          <a href="/blog">Blog</a>
+          <Link href="/blog">Blog</Link>
         </li>
         <li
           className={
@@ -34,7 +36,7 @@ function Sidebar({}) {
               : "sidebar__list__item"
           }
         >
-          <a href="/projects">Projects</a>
+          <Link href="/projects">Projects</Link>
         </li>
         <li
           className={
@@ -43,7 +45,7 @@ function Sidebar({}) {
               : "sidebar__list__item"
           }
         >
-          <a href="/youtube">Youtube</a>
+          <Link href="/youtube">Youtube</Link>
         </li>
         <li
           className={
@@ -52,7 +54,7 @@ function Sidebar({}) {
               : "sidebar__list__item"
           }
         >
-          <a href="contact">Contact Me </a>
+          <Link href="contact">Contact Me </Link>
         </li>
       </ul>
     </div>

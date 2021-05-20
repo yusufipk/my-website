@@ -1,4 +1,34 @@
 .heading-1 {
-	font-size: 2.5rem;
-	font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.heading-2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.paragraph {
+  max-width: 65%;
+}
+
+a {
+  color: $color-grey-dark-1;
+  text-decoration: none;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $color-tertiary;
+    transition: all 0.5s;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+  &:hover {
+    color: $color-primary;
+  }
 }

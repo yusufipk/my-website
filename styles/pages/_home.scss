@@ -1,105 +1,25 @@
-.home {
-  &__header {
-    background: linear-gradient(to right, $color-white 65%, $color-primary 40%);
-    padding: 5rem;
-    font-size: 1.6rem;
-    display: grid;
-    grid-template-rows: repeat(4, 17rem);
-    grid-template-columns: repeat(8, 1fr);
-    justify-content: center;
-    padding-bottom: 25rem;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem;
 
-    &-content {
-      grid-row: 2;
-      grid-column: 3/ 6;
-      z-index: 10;
-      align-self: center;
-
-      &-name {
-        color: $color-secondary;
-      }
-
-      &-social {
-        font-size: 4rem;
-        color: $color-secondary;
-
-        a:active {
-          color: $color-secondary;
-        }
-
-        .social__icon:not(:last-child) {
-          margin-right: 2rem;
-        }
-      }
-    }
-
-    &-image {
-      grid-row: 1;
-      grid-column: 4 / 8;
-
-      img {
-        width: 100%;
-        display: block;
-      }
-    }
+  & > * {
+    margin-bottom: 1.5rem;
   }
+  background-color: $color-white;
+  font-size: 1.9rem;
 
-  &__about {
-    display: grid;
-    grid-template-rows: repeat(4, min-content);
-    gap: 1.5rem;
-    grid-template-columns: repeat(8, 1fr);
-    background-color: #f8f8f8;
-
-    padding: 7rem 0;
-
-    &-image {
-      justify-self: center;
-      border-radius: 10px;
-      grid-row: 1 / 2;
-      grid-column: 4 / 6;
-      width: 250px;
-      max-width: 100%;
-    }
-
-    &-tabs {
-      grid-row: 2;
-      grid-column: 4 / 6;
-      list-style-type: none;
-      font-size: 2.5rem;
-      display: flex;
-      margin-left: 2rem;
-      justify-content: center;
-
-      button {
-        align-self: center;
-        margin-top: 2rem;
-
-        &:not(:last-child) {
-          margin-right: 2rem;
-        }
-      }
-    }
-
-    &-text {
-      grid-row: 4;
-      grid-column: 4 / 6;
-      margin-left: 2rem;
-
-      &-paragraph {
-        font-size: 1.9rem;
-      }
-
-      &-list {
-        li:not(:last-child) {
-          margin-bottom: 0.9rem;
-        }
-      }
-    }
+  img {
+    border-radius: 8px;
   }
-  &__contact {
-    background-color: rebeccapurple;
-    padding: 5rem;
-    font-size: 1.6rem;
+  &__social {
+    font-size: 4rem;
+    & > * {
+      margin-right: 1rem;
+    }
+    a::after {
+      display: none;
+    }
   }
 }
