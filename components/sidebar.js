@@ -54,7 +54,7 @@ function Sidebar({}) {
               : "sidebar__list__item"
           }
         >
-          <Link href="contact">Contact Me </Link>
+          <Link href="/contact">Contact Me </Link>
         </li>
       </ul>
     </div>

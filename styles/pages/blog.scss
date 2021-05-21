@@ -1,0 +1,41 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  animation: moveInBottom 1s;
+  padding: 7rem;
+
+  &__list {
+    list-style-type: none;
+    li {
+      font-size: 4rem;
+
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  hr {
+    border-top: 3px solid $color-primary;
+    margin-bottom: 3rem;
+  }
+
+  &__searchbar {
+    align-self: center;
+    min-width: 60%;
+    margin-bottom: 1rem;
+
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    height: 3rem;
+    padding: 2px 2rem;
+    outline: 0;
+    background-color: $color-grey;
+
+    &:hover,
+    &:focus {
+      border: 1.5px solid $color-tertiary;
+      background-color: $color-white;
+    }
+  }
+}
