@@ -1,7 +1,7 @@
 import { createClient } from "contentful";
-import Link from "next/link";
 import { useState } from "react";
 import List from "../components/list";
+import Head from "next/head";
 
 export default function Blog({ blog }) {
   const [search, setSearch] = useState("");
@@ -15,6 +15,9 @@ export default function Blog({ blog }) {
 
   return (
     <div className="blog">
+      <Head>
+        <title>Blog</title>
+      </Head>
       <h2 className="heading-2 u-margin-bottom-smaller">Latest Posts</h2>
       <hr />
       <input
@@ -46,5 +49,6 @@ export async function getStaticProps() {
     props: {
       blog: res.items,
     },
+    revalidate: 10,
   };
 }

@@ -2,8 +2,19 @@ import { createClient } from "contentful";
 import Image from "next/image";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
+import Head from "next/head";
 
 export default function PostDetails({ posts }) {
+  if (!posts)
+    return (
+      <div className="loading">
+        <Head>
+          <title> Loading... </title>
+        </Head>
+        <h1 className="heading-1 u-center-text">Loading...</h1>
+      </div>
+    );
+
   const { featuredImage, title, tags, post, date } = posts.fields;
 
   const options = {
@@ -38,6 +49,10 @@ export default function PostDetails({ posts }) {
 
   return (
     <div className="post">
+      <Head>
+        <title>{title} - Blog</title>
+      </Head>
+
       <div className="post__featured">
         <Image
           src={`https:${featuredImage.fields.file.url}`}
@@ -86,7 +101,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 };
 
@@ -96,7 +111,12 @@ export async function getStaticProps({ params }) {
     "fields.slug": params.slug,
   });
 
+  if (!items.length) {
+    return { redirect: { destination: "/404", permanent: false } };
+  }
+
   return {
     props: { posts: items[0] },
+    revalidate: 10,
   };
 }

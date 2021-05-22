@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -9,6 +10,9 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export default function HomePage() {
   return (
     <div className="main">
+      <Head>
+        <title>Home</title>
+      </Head>
       <h1 className="heading-1">Hi, I am Yusuf.</h1>
       <div className="main__image">
         <Image
