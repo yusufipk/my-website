@@ -1,0 +1,37 @@
+.projects {
+  padding: 7rem;
+  &__container {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: minmax(10rem, 45rem) minmax(50rem, 1fr);
+    gap: 3rem;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      &-meta {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15rem;
+
+        color: $color-grey-light-1;
+        & > * {
+          font-size: 2.5rem;
+        }
+      }
+
+      &-description {
+        font-size: 2rem;
+        font-weight: 200;
+
+        a {
+          margin-top: 1rem;
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
