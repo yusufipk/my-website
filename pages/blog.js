@@ -13,7 +13,6 @@ export default function Blog({ blog }) {
           post.fields.title.toLowerCase().includes(search.toLowerCase())
         );
 
-  console.log(blog);
   return (
     <div className="blog">
       <h2 className="heading-2 u-margin-bottom-smaller">Latest Posts</h2>

@@ -41,3 +41,16 @@
     transform: translate(0);
   }
 }
+
+@keyframes moveInBOpacity {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
