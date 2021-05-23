@@ -1,5 +1,8 @@
 .projects {
   padding: 7rem;
+
+  animation: moveInBottom 1s;
+
   &__container {
     margin-top: 6rem;
     display: grid;

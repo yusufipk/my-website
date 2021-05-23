@@ -1,0 +1,31 @@
+.youtube {
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+
+  animation: moveInBottom 1s;
+
+  .heading-1,
+  p,
+  &__iframes {
+    align-self: center;
+  }
+
+  hr,
+  p {
+    margin-bottom: 1rem;
+  }
+
+  &__iframes {
+    display: flex;
+    flex-direction: column;
+
+    animation: moveInBottom 1.5s;
+  }
+
+  &__iframe {
+    width: 50rem;
+    height: 27rem;
+    margin: 2rem;
+  }
+}
