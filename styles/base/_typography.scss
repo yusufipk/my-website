@@ -23,7 +23,7 @@
 }
 
 a {
-  color: $color-grey-dark-1;
+  color: var(--color-grey-dark-1);
   text-decoration: none;
   display: inline-block;
 
@@ -32,14 +32,14 @@ a {
     display: block;
     width: 0;
     height: 2px;
-    background: $color-tertiary;
+    background: var(--color-tertiary);
     transition: all 0.5s;
   }
   &:hover::after {
     width: 100%;
   }
   &:hover {
-    color: $color-primary;
+    color: var(--color-primary);
   }
 }
 

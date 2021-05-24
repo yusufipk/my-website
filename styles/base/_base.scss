@@ -14,9 +14,11 @@ html {
 body {
   box-sizing: border-box;
   font-family: inherit;
+  background-color: var(--color-white);
+  transition: background-color 0.5s;
 }
 
 ::selection {
-  background-color: $color-grey-dark-2;
-  color: $color-white;
+  background-color: var(--color-grey-dark-2);
+  color: var(--color-white);
 }

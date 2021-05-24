@@ -1,6 +1,11 @@
+import Head from "next/head";
 export default function Youtube() {
   return (
     <div className="youtube">
+      <Head>
+        <title>Youtube</title>
+      </Head>
+
       <h1 className="heading-1">My Youtube Channel</h1>
       <hr />
       <p>

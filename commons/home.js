@@ -96,7 +96,9 @@ export default function HomePage() {
         </li>
         <li>🎹 I have been playing piano for 6 months and I enjoy singing.</li>
       </ol>
-      <h2 className="heading-2">Get in Touch</h2>
+      <h2 className="heading-2" id="contact">
+        Get in Touch
+      </h2>
       <ol className="list">
         <li>
           You can send an{" "}

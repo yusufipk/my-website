@@ -13,7 +13,7 @@
   &__metadata {
     display: flex;
     justify-content: space-around;
-    color: $color-tertiary;
+    color: var(--color-tertiary);
     font-size: 1.6rem;
 
     &-tags {
@@ -28,6 +28,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    line-height: 1.5;
 
     animation: moveInBottom 1.5s;
 

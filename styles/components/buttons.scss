@@ -1,0 +1,22 @@
+.themeToggle {
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  align-self: center;
+  padding: 1rem;
+
+  margin-top: 1.2rem;
+}
+
+.themeToggle--dark {
+  background-color: #f7f7f7;
+  color: black;
+  font-size: 2rem;
+}
+.themeToggle--light {
+  background-color: #383838;
+  color: white;
+  font-size: 2rem;
+}

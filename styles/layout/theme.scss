@@ -1,0 +1,41 @@
+body[data-theme="dark"] {
+  --color-white: #292929;
+
+  --color-primary: #fff;
+  --color-tertiary: #468eee;
+
+  --color-grey: #383838;
+  --color-grey-dark-1: #b2aba1;
+  --color-grey-dark-2: #fff;
+
+  .heading-1,
+  .heading-2,
+  .heading-3,
+  .heading-4 {
+    color: #e7e5e2;
+  }
+
+  hr {
+    border-color: #808080 !important;
+    background-color: #808080 !important;
+  }
+
+  p,
+  li {
+    color: #fff;
+  }
+
+  .blog__searchbar {
+    background-color: #292929 !important;
+  }
+
+  input,
+  select {
+    color: #fff;
+  }
+
+  code {
+    background-color: #383838;
+    color: #fff;
+  }
+}

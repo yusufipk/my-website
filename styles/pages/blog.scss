@@ -16,7 +16,7 @@
   }
 
   hr {
-    border-top: 3px solid $color-primary;
+    border-top: 3px solid var(--color-primary);
     margin-bottom: 3rem;
   }
 
@@ -25,17 +25,19 @@
     min-width: 60%;
     margin-bottom: 1rem;
 
-    border: 1px solid $color-primary;
+    border: 1px solid var(--color-primary);
     border-radius: 5px;
     height: 3rem;
     padding: 2px 2rem;
     outline: 0;
-    background-color: $color-grey;
+    background-color: var(--color-grey);
+
+    transition: all 0.2s;
 
     &:hover,
     &:focus {
-      border: 1.5px solid $color-tertiary;
-      background-color: $color-white;
+      border: 1.5px solid var(--color-tertiary);
+      background-color: var(--color-white);
     }
   }
 }

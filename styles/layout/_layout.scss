@@ -7,18 +7,27 @@
 .sidebar {
   grid-row: 1 / span 2;
 
-  color: $color-primary;
-  background-color: $color-grey;
+  color: var(--color-primary);
+  background-color: var(--color-grey);
   font-size: 1.7rem;
 
   display: flex;
   flex-direction: column;
-  padding: 18.5%;
+  justify-items: center;
+  // padding: 18.5%;
+  transition: background-color 0.5s;
+
+  h1 {
+    padding: 18.5% 18.5% 0 18.5%;
+  }
+  &__list {
+    padding: 0 18.5% 0 18.5%;
+  }
 
   animation: moveInLeft 1s ease-in-out;
 
   span {
-    color: $color-tertiary;
+    color: var(--color-tertiary);
     font-size: 2.1rem;
     font-weight: 600;
   }
@@ -29,7 +38,7 @@
 
   &__list {
     list-style: none;
-    color: $color-secondary;
+    color: var(--color-secondary);
 
     li:not(:last-child) {
       margin-bottom: 10px;
@@ -37,14 +46,14 @@
   }
 
   &__item--active a {
-    color: $color-primary;
+    color: var(--color-primary);
     &:after {
       content: "";
       display: block;
       margin: auto;
       height: 2px;
       width: 100%;
-      background-color: $color-tertiary;
+      background-color: var(--color-tertiary);
     }
   }
 }
