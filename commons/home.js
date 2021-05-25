@@ -59,7 +59,7 @@ export default function HomePage() {
       <ol className="list">
         <li>
           💻 I am a web developer and{" "}
-          <Link href="/projects">these are my projects.</Link>{" "}
+          <Link href="/projects">these are my projects.</Link>
         </li>
         <li>
           📹 I am passionate about computers and software. I have a{" "}
