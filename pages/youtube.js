@@ -19,7 +19,7 @@ export default function Youtube() {
         like to check it out, here is the{" "}
         <a
           href="https://dar.vin/pdcwb"
-          _target="blank"
+          target="_blank"
           rel="noopener noreferrer"
         >
           {" "}
@@ -28,30 +28,26 @@ export default function Youtube() {
         .
       </p>
       <div className="youtube__iframes">
-        <div className="youtube__iframes-1">
-          <iframe
-            title="VPN Firmalarının Tuzakları"
-            src="https://www.youtube.com/embed/dd3CopniBW4"
-            className="youtube__iframe"
-          />
-          <iframe
-            title="Neden Firefox En İyi Web Tarayıcısı"
-            src="https://www.youtube.com/embed/X9WLQfZ8Ff0"
-            className="youtube__iframe"
-          />
-        </div>
-        <div className="youtube__iframes-2">
-          <iframe
-            title="Neden Açık Kaynak Program Kullanıyorum"
-            src="https://www.youtube.com/embed/1VJxXIG_YHI"
-            className="youtube__iframe"
-          />
-          <iframe
-            title="Olmazsa Olmaz Eklentilerim"
-            src="https://www.youtube.com/embed/jUgJUqFw_O8"
-            className="youtube__iframe"
-          />
-        </div>
+        <iframe
+          title="VPN Firmalarının Tuzakları"
+          src="https://www.youtube.com/embed/dd3CopniBW4"
+          className="youtube__iframe"
+        />
+        <iframe
+          title="Neden Firefox En İyi Web Tarayıcısı"
+          src="https://www.youtube.com/embed/X9WLQfZ8Ff0"
+          className="youtube__iframe"
+        />
+        <iframe
+          title="Neden Açık Kaynak Program Kullanıyorum"
+          src="https://www.youtube.com/embed/1VJxXIG_YHI"
+          className="youtube__iframe"
+        />
+        <iframe
+          title="Olmazsa Olmaz Eklentilerim"
+          src="https://www.youtube.com/embed/jUgJUqFw_O8"
+          className="youtube__iframe"
+        />
       </div>
     </div>
   );

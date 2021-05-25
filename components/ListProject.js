@@ -19,7 +19,7 @@ export default function ListProject({ project }) {
                 {item.fields.date.slice(0, 4)}
               </p>
             </div>
-            <h1 className="heading-1">{item.fields.title}</h1>
+            <h1 className="heading-1 projects__heading">{item.fields.title}</h1>
             <div className="projects__container__content-description">
               {documentToReactComponents(item.fields.description)}
             </div>

@@ -5,6 +5,10 @@
 
   animation: moveInBottom 1s;
 
+  @include media("<small") {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
   .heading-1,
   p,
   &__iframes {
@@ -17,15 +21,22 @@
   }
 
   &__iframes {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+    @include media("<small") {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
 
     animation: moveInBottom 1.5s;
   }
 
   &__iframe {
-    width: 50rem;
+    width: 30vw;
     height: 27rem;
-    margin: 2rem;
+    @include media("<small") {
+      width: 40rem;
+    }
   }
 }

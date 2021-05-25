@@ -8,6 +8,10 @@
     padding: 3rem;
     align-self: center;
     max-width: 55%;
+
+    @include media("<large") {
+      max-width: 90%;
+    }
   }
 
   &__metadata {
@@ -15,6 +19,10 @@
     justify-content: space-around;
     color: var(--color-tertiary);
     font-size: 1.6rem;
+    @include media("<smallest") {
+      font-size: 1.3rem;
+      justify-content: space-between;
+    }
 
     &-tags {
       span:not(:last-child) {
@@ -33,6 +41,9 @@
 
     animation: moveInBottom 1.5s;
 
+    @include media("<small") {
+      padding: 3rem 1rem 3rem 1rem;
+    }
     & > * {
       padding-bottom: 2.5rem;
     }
@@ -54,6 +65,13 @@
 
   &__image {
     max-width: 60%;
+
+    @include media("<medium") {
+      max-width: 90%;
+    }
+    @include media("<smallest") {
+      max-width: 95%;
+    }
   }
 }
 

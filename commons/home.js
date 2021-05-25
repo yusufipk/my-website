@@ -102,14 +102,21 @@ export default function HomePage() {
       <ol className="list">
         <li>
           You can send an{" "}
-          <a href="mailto:yusufipek.telekinesis@8shield.net">email</a> to me.
+          <a
+            target="_blank"
+            relf="noopener noreferrer"
+            href="mailto:yusufipek.telekinesis@8shield.net"
+          >
+            email
+          </a>{" "}
+          to me.
         </li>
         <li>
           {" "}
           My matrix adress is;{" "}
           <a
             href="https://matrix.to/#/@yusufipek:matrix.org"
-            _target="blank"
+            target="_blank"
             rel="noopener noreferrer"
           >
             @yusufipek:matrix.org

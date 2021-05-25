@@ -1,13 +1,21 @@
 .projects {
   padding: 7rem;
 
+  @include media("<small") {
+    padding: 1rem;
+  }
+
   animation: moveInBottom 1s;
 
   &__container {
     margin-top: 6rem;
     display: grid;
-    grid-template-columns: minmax(10rem, 45rem) minmax(50rem, 1fr);
+    grid-template-columns: minmax(10rem, 45rem) minmax(40vw, 1fr);
     gap: 3rem;
+
+    @include media("<small") {
+      margin-top: 2rem;
+    }
 
     &__content {
       display: flex;
@@ -16,11 +24,26 @@
       &-meta {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 15rem;
+        margin-bottom: 20%;
 
         color: var(--color-grey-light-1);
         & > * {
           font-size: 2.5rem;
+        }
+        @include media("<large") {
+          & > * {
+            font-size: 2rem;
+          }
+        }
+
+        @include media("<small") {
+          margin-bottom: 0;
+        }
+
+        @include media("<smallest") {
+          & > * {
+            font-size: 1.2rem;
+          }
         }
       }
 
@@ -34,7 +57,19 @@
             margin-right: 1rem;
           }
         }
+
+        @include media("<hobbit") {
+          p {
+            font-size: 1.8rem;
+          }
+        }
       }
+    }
+  }
+
+  &__heading {
+    @include media("<hobbit") {
+      font-size: 2.3rem;
     }
   }
 }
