@@ -1,6 +1,10 @@
 .heading-1 {
   font-size: 3.5rem;
   font-weight: 600;
+
+  @include media("<smallest") {
+    font-size: 3rem;
+  }
 }
 
 .heading-2 {
@@ -20,6 +24,13 @@
 
 .paragraph {
   max-width: 65%;
+
+  @include media("<small") {
+    max-width: 90%;
+  }
+  @include media("<smallest") {
+    max-width: 100%;
+  }
 }
 
 a {

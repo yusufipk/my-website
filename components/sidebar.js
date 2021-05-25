@@ -6,8 +6,9 @@ const ThemeToggle = dynamic(() => import("./themeToggle"), {
 });
 function Sidebar({}) {
   const router = useRouter();
+
   return (
-    <div className="sidebar">
+    <div id="sidebar" className="sidebar">
       <ThemeToggle />
       <h1 className="heading-1 u-margin-bottom-medium">
         Yusuf İpek <br />

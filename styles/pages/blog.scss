@@ -6,10 +6,14 @@
   animation: moveInBottom 1s;
   padding: 7rem;
 
+  @include media("<small") {
+    padding-top: 1rem;
+  }
+
   &__list {
     list-style-type: none;
     li {
-      font-size: 4rem;
+      // font-size: 4rem;
 
       margin-bottom: 1.5rem;
     }

@@ -6,7 +6,9 @@ export default function List({ posts }) {
     <React.Fragment>
       {posts.map((post) => (
         <li className="blog__post" key={post.sys.id}>
-          <Link href={`/blog/${post.fields.slug}`}>{post.fields.title}</Link>
+          <h1 className="heading-1">
+            <Link href={`/blog/${post.fields.slug}`}>{post.fields.title}</Link>
+          </h1>
         </li>
       ))}
     </React.Fragment>
