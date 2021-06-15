@@ -3,7 +3,18 @@ export default function Youtube() {
   return (
     <div className="youtube">
       <Head>
-        <title>Youtube</title>
+        <title>Youtube - Yusuf Ipek</title>
+        <meta property="og:title" content="Youtube - Yusuf Ipek" />
+        <meta
+          property="og:description"
+          content="Information about my Youtube channel."
+        />
+        <meta
+          property="og:image"
+          content={
+            "https://images.ctfassets.net/adn4iqhmi2t3/7DK68GzQfM57MAAyPw33At/3539a5206b985990379e0b9a3765fe3a/youtube.png"
+          }
+        />
       </Head>
 
       <h1 className="heading-1">My Youtube Channel</h1>

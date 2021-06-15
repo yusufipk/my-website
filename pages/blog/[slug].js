@@ -16,7 +16,7 @@ export default function PostDetails({ posts }) {
       </div>
     );
 
-  const { featuredImage, title, tags, post, date } = posts.fields;
+  const { featuredImage, title, tags, post, date, description } = posts.fields;
 
   const options = {
     renderNode: {
@@ -66,6 +66,12 @@ export default function PostDetails({ posts }) {
     <div className="post">
       <Head>
         <title>{title} - Blog</title>
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta
+          property="og:image"
+          content={`https:${featuredImage.fields.file.url}`}
+        />
       </Head>
 
       <div className="post__featured">

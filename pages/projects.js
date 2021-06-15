@@ -6,7 +6,18 @@ export default function Projects({ project }) {
   return (
     <div className="projects">
       <Head>
-        <title>Projects</title>
+        <title>Projects - Yusuf Ipek</title>
+        <meta property="og:title" content="Projects - Yusuf Ipek" />
+        <meta
+          property="og:description"
+          content="These are my coding projects."
+        />
+        <meta
+          property="og:image"
+          content={
+            "https://images.ctfassets.net/adn4iqhmi2t3/4V9vjZRUIDJSND48kVh792/a7ad4cdaf6d30e43e88430a31bc9379a/projects.png"
+          }
+        />
       </Head>
       <h1 className="heading-1">Projects</h1>
       <hr />

@@ -11,7 +11,18 @@ export default function HomePage() {
   return (
     <div className="main">
       <Head>
-        <title>Home</title>
+        <title>Home- Yusuf Ipek</title>
+        <meta property="og:title" content="Home - Yusuf Ipek" />
+        <meta
+          property="og:description"
+          content="Yusuf Ipek/Web Developer | Content Creator."
+        />
+        <meta
+          property="og:image"
+          content={
+            "https://images.ctfassets.net/adn4iqhmi2t3/6gbSKrpXm0y858temD1YNg/7ad99757ec5093d6a1bd13e67fc7a67b/home.png"
+          }
+        />
       </Head>
       <h1 className="heading-1">Hi, I am Yusuf.</h1>
       <div className="main__image">
