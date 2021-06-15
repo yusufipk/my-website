@@ -6,7 +6,7 @@ export default function ListProject({ project }) {
   return (
     <React.Fragment>
       {project.map((item) => (
-        <div className="projects__container">
+        <div key={item.fields.number} className="projects__container">
           <div className="projects__container__content">
             <hr />
             <div className="projects__container__content-meta">

@@ -58,8 +58,8 @@ export default function HomePage() {
       <h2 className="heading-2">What I am Doing</h2>
       <ol className="list">
         <li>
-          💻 I am a web developer and{" "}
-          <Link href="/projects">these are my projects.</Link>
+          💻 I am a web developer and <Link href="/projects"> these </Link> are
+          my projects.
         </li>
         <li>
           📹 I am passionate about computers and software. I have a{" "}
