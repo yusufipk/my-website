@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <div className="main">
       <Head>
-        <title>Home- Yusuf Ipek</title>
+        <title>Home - Yusuf Ipek</title>
         <meta property="og:title" content="Home - Yusuf Ipek" />
         <meta
           property="og:description"
