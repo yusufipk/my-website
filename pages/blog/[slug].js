@@ -66,7 +66,7 @@ export default function PostDetails({ posts }) {
     <div className="post">
       <Head>
         <title>{title} - Blog</title>
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={`${title} - Yusuf Ipek`} />
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
