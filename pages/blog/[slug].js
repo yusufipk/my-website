@@ -1,8 +1,9 @@
-import { createClient } from "contentful";
+import Head from "next/head";
 import Image from "next/image";
+import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
-import Head from "next/head";
+import { MARKS } from "@contentful/rich-text-types";
 
 export default function PostDetails({ posts }) {
   if (!posts)
@@ -43,6 +44,20 @@ export default function PostDetails({ posts }) {
             <ul> {children} </ul>
           </div>
         );
+      },
+      [BLOCKS.PARAGRAPH]: (node, children) => {
+        if (
+          node.content.length === 1 &&
+          node.content[0].marks.find((x) => x.type === "code")
+        ) {
+          return <div>{children}</div>;
+        }
+        return <p>{children}</p>;
+      },
+    },
+    renderMark: {
+      [MARKS.CODE]: (text) => {
+        return <pre> {text}</pre>;
       },
     },
   };
