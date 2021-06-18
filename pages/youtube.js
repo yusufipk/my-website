@@ -71,7 +71,7 @@ export default function Youtube() {
           rel="noopener noreferrer"
         >
           <Image
-            src="/youtube/açık.jpeg"
+            src="/youtube/acik.png"
             width="550px"
             height="320px"
             alt="Neden Açık Kaynak Program Kullanıyorum"
