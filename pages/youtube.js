@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+
 export default function Youtube() {
   return (
     <div className="youtube">
@@ -39,26 +41,54 @@ export default function Youtube() {
         .
       </p>
       <div className="youtube__iframes">
-        <iframe
-          title="VPN Firmalarının Tuzakları"
-          src="https://www.youtube.com/embed/dd3CopniBW4"
-          className="youtube__iframe"
-        />
-        <iframe
-          title="Neden Firefox En İyi Web Tarayıcısı"
-          src="https://www.youtube.com/embed/X9WLQfZ8Ff0"
-          className="youtube__iframe"
-        />
-        <iframe
-          title="Neden Açık Kaynak Program Kullanıyorum"
-          src="https://www.youtube.com/embed/1VJxXIG_YHI"
-          className="youtube__iframe"
-        />
-        <iframe
-          title="Olmazsa Olmaz Eklentilerim"
-          src="https://www.youtube.com/embed/jUgJUqFw_O8"
-          className="youtube__iframe"
-        />
+        <a
+          href="https://www.youtube.com/watch/dd3CopniBW4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/youtube/vpn2.png"
+            width="550px"
+            height="320px"
+            alt="VPN Firmalarının Tuzakları"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/watch/X9WLQfZ8Ff0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/youtube/firefox.jpg"
+            width="550px"
+            height="320px"
+            alt="Neden Firefox En İyi Web Tarayıcısı"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/watch/1VJxXIG_YHI"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/youtube/açık.png"
+            width="550px"
+            height="320px"
+            alt="Neden Açık Kaynak Program Kullanıyorum"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/watch/jUgJUqFw_O8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/youtube/eklenti.png"
+            width="550px"
+            height="320px"
+            alt="Olmazsa Olmaz Eklentilerim"
+          />
+        </a>
       </div>
     </div>
   );

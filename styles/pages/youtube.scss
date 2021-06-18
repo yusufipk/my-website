@@ -28,15 +28,23 @@
     @include media("<small") {
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
+    a {
+      &::after {
+        display: none;
+      }
+      &::before {
+        display: none;
+      }
+    }
+
+    img {
+      transition: 0.4s;
+      border-radius: 5px;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
 
     animation: moveInBottom 1.5s;
-  }
-
-  &__iframe {
-    width: 30vw;
-    height: 27rem;
-    @include media("<small") {
-      width: 40rem;
-    }
   }
 }
