@@ -62,7 +62,7 @@ export default function HomePage() {
 
       <p className="paragraph">
         I am a web developer and a content creator. I am creating videos about
-        open-source and technology in my Youtube channel. I have a podcast and I
+        open-source and technology on my Youtube channel. I have a podcast and I
         am writing blog.
       </p>
 
