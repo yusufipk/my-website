@@ -7,6 +7,7 @@ export default function Projects({ project }) {
     <div className="projects">
       <Head>
         <title>Projects - Yusuf Ipek</title>
+        <meta name="description" content="These are my coding projects." />
         <meta property="og:title" content="Projects - Yusuf Ipek" />
         <meta
           property="og:description"

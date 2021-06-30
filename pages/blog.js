@@ -17,6 +17,7 @@ export default function Blog({ blog }) {
     <div className="blog">
       <Head>
         <title>Blog - Yusuf Ipek</title>
+        <meta name="description" content="Latest posts I've written." />
         <meta property="og:title" content="Blog - Yusuf Ipek" />
         <meta property="og:description" content="Latest posts I've written." />
         <meta
