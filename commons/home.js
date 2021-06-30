@@ -12,6 +12,10 @@ export default function HomePage() {
     <div className="main">
       <Head>
         <title>Home - Yusuf Ipek</title>
+        <meta
+          name="description"
+          content="Yusuf Ipek/Web Developer | Content Creator."
+        />
         <meta property="og:title" content="Home - Yusuf Ipek" />
         <meta
           property="og:description"

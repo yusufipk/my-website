@@ -18,13 +18,15 @@ export default function PostDetails({ posts }) {
 
   const { featuredImage, title, tags, post, date, description } = posts.fields;
 
+  console.log(posts.fields);
+
   const options = {
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: (node) => (
         <div className="post__image">
           <Image
             src={`https:${node.data.target.fields.file.url}`}
-            alt={node.data.target.fields.file.fileName}
+            alt={node.data.target.fields.description}
             width={node.data.target.fields.file.details.image.width}
             height={node.data.target.fields.file.details.image.height}
           />
@@ -66,6 +68,7 @@ export default function PostDetails({ posts }) {
     <div className="post">
       <Head>
         <title>{title} - Blog</title>
+        <meta name="description" content={description} />
         <meta property="og:title" content={`${title} - Yusuf Ipek`} />
         <meta property="og:description" content={description} />
         <meta
@@ -77,6 +80,7 @@ export default function PostDetails({ posts }) {
       <div className="post__featured">
         <Image
           src={`https:${featuredImage.fields.file.url}`}
+          alt={featuredImage.fields.file.fileName}
           width={featuredImage.fields.file.details.image.width}
           height={featuredImage.fields.file.details.image.height}
         />

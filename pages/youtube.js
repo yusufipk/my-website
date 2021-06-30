@@ -8,6 +8,10 @@ export default function Youtube() {
         <title>Youtube - Yusuf Ipek</title>
         <meta property="og:title" content="Youtube - Yusuf Ipek" />
         <meta
+          name="description"
+          content="Information about my Youtube channel."
+        />
+        <meta
           property="og:description"
           content="Information about my Youtube channel."
         />
